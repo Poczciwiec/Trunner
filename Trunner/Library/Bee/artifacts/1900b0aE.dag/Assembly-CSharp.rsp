@@ -117,7 +117,6 @@
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
 -define:ENABLE_INPUT_SYSTEM
--define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -357,6 +356,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Prefabs/Player/Camera_Controller.cs"
 "Assets/Prefabs/Player/Player_controller.cs"
+"Assets/UserInput/InputActions.cs"
 -langversion:9.0
 /deterministic
 /optimize+
