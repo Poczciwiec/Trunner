@@ -15,7 +15,7 @@ C:/Users/janek/Desktop/Trunner/Trunner
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56289
+50207
 Successfully changed project path to: C:/Users/janek/Desktop/Trunner/Trunner
 C:/Users/janek/Desktop/Trunner/Trunner
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ C:/Users/janek/Desktop/Trunner/Trunner
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [22052]  Target information:
+Player connection [21276]  Target information:
 
-Player connection [22052]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3120046131 [EditorId] 3120046131 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A3JKKRF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21276]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 1387001349 [EditorId] 1387001349 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A3JKKRF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [22052]  * "[IP] 192.168.1.25 [Port] 0 [Flags] 2 [Guid] 3120046131 [EditorId] 3120046131 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A3JKKRF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [21276]  * "[IP] 192.168.1.25 [Port] 0 [Flags] 2 [Guid] 1387001349 [EditorId] 1387001349 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-A3JKKRF) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [22052] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [22052] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21276] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [21276] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 16.00 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 12.36 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.38f1 (c5d5a7410213)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Resources/UnitySubsystems
@@ -74,44 +74,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56248
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012794 seconds.
-- Loaded All Assemblies, in  0.368 seconds
+Registered in 0.012476 seconds.
+- Loaded All Assemblies, in  0.382 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.326 seconds
-Domain Reload Profiling: 692ms
-	BeginReloadAssembly (133ms)
+- Finished resetting the current domain, in  0.320 seconds
+Domain Reload Profiling: 699ms
+	BeginReloadAssembly (122ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (33ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (125ms)
-		LoadAssemblies (130ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (131ms)
+		LoadAssemblies (119ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (122ms)
-			TypeCache.Refresh (121ms)
-				TypeCache.ScanAssembly (108ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (327ms)
+		AnalyzeDomain (129ms)
+			TypeCache.Refresh (127ms)
+				TypeCache.ScanAssembly (111ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (320ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (265ms)
+		SetupLoadedEditorAssemblies (259ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (8ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (187ms)
-			ProcessInitializeOnLoadMethodAttributes (55ms)
+			ProcessInitializeOnLoadAttributes (181ms)
+			ProcessInitializeOnLoadMethodAttributes (58ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -119,55 +119,55 @@ Domain Reload Profiling: 692ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.719 seconds
-Refreshing native plugins compatible for Editor in 5.09 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.775 seconds
+Refreshing native plugins compatible for Editor in 5.26 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.645 seconds
-Domain Reload Profiling: 1360ms
-	BeginReloadAssembly (198ms)
+- Finished resetting the current domain, in  0.707 seconds
+Domain Reload Profiling: 1478ms
+	BeginReloadAssembly (178ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (37ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (67ms)
 	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (418ms)
-		LoadAssemblies (384ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (461ms)
+		LoadAssemblies (364ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (167ms)
-			TypeCache.Refresh (145ms)
-				TypeCache.ScanAssembly (131ms)
-			ScanForSourceGeneratedMonoScriptInfo (16ms)
+		AnalyzeDomain (197ms)
+			TypeCache.Refresh (174ms)
+				TypeCache.ScanAssembly (160ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (645ms)
+	FinalizeReload (708ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (507ms)
+		SetupLoadedEditorAssemblies (556ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (65ms)
-			ProcessInitializeOnLoadAttributes (401ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (442ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 5.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.29 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3477 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (58.6 KB). Loaded Objects now: 3937.
-Memory consumption went from 126.9 MB to 126.8 MB.
-Total: 3.387400 ms (FindLiveObjects: 0.259200 ms CreateObjectMapping: 0.092800 ms MarkObjects: 2.921500 ms  DeleteObjects: 0.113200 ms)
+Unloading 40 unused Assets / (58.1 KB). Loaded Objects now: 3937.
+Memory consumption went from 126.9 MB to 126.9 MB.
+Total: 3.890800 ms (FindLiveObjects: 0.263300 ms CreateObjectMapping: 0.235400 ms MarkObjects: 3.275700 ms  DeleteObjects: 0.115700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,82 +183,55 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 12039.103149 seconds.
-  path: Assets/InputSystem.inputsettings.asset
-  artifactKey: Guid(5f201ad053f788f43b5f4ff0ec68a6b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/InputSystem.inputsettings.asset using Guid(5f201ad053f788f43b5f4ff0ec68a6b4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '63211ab6a9074256598aea934e1f3516') in 0.113596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 390.199817 seconds.
-  path: Assets/Trunner.inputactions
-  artifactKey: Guid(535ebd86286c38d408f152f376fa9419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Trunner.inputactions using Guid(535ebd86286c38d408f152f376fa9419) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '9140b59f153ddfee3a339931e2acb0af') in 0.014701 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 14
-========================================================================
-Received Import Request.
-  Time since last request: 0.850559 seconds.
-  path: Assets/Trunner.inputactions
-  artifactKey: Guid(535ebd86286c38d408f152f376fa9419) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
-Start importing Assets/Trunner.inputactions using Guid(535ebd86286c38d408f152f376fa9419) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1fa1120a00795f17e3e2122f2d06ecfa') in 0.024656 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 15
-========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.499 seconds
-Refreshing native plugins compatible for Editor in 5.38 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.478 seconds
+Refreshing native plugins compatible for Editor in 5.42 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.072 seconds
-Domain Reload Profiling: 1567ms
-	BeginReloadAssembly (184ms)
+- Finished resetting the current domain, in  1.114 seconds
+Domain Reload Profiling: 1587ms
+	BeginReloadAssembly (169ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (235ms)
-		LoadAssemblies (309ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (219ms)
+		LoadAssemblies (301ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (24ms)
-			TypeCache.Refresh (8ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (5ms)
-	FinalizeReload (1072ms)
+	FinalizeReload (1114ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (472ms)
+		SetupLoadedEditorAssemblies (502ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
+			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (362ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (12ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (389ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 6.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3468 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3941.
-Memory consumption went from 125.6 MB to 125.6 MB.
-Total: 2.947400 ms (FindLiveObjects: 0.270700 ms CreateObjectMapping: 0.095700 ms MarkObjects: 2.532200 ms  DeleteObjects: 0.048300 ms)
+Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3940.
+Memory consumption went from 125.9 MB to 125.8 MB.
+Total: 3.064000 ms (FindLiveObjects: 0.274300 ms CreateObjectMapping: 0.181000 ms MarkObjects: 2.560100 ms  DeleteObjects: 0.048000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -276,63 +249,1162 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 143.052789 seconds.
-  path: Assets/Prefabs/Player/Camera_Controller.cs
-  artifactKey: Guid(879c169ca10cae740bc32ab76cbdef59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player/Camera_Controller.cs using Guid(879c169ca10cae740bc32ab76cbdef59) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '07cf918935c6f8460015416aa313d920') in 0.002015 seconds
+  Time since last request: 1859.218776 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.002052 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.001178 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000339 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006872 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000599 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006470 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000362 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006862 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000341 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006854 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000342 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006792 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000338 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006520 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000338 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006456 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000348 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006461 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000347 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006384 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000345 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006490 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000337 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006630 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000345 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.007017 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000365 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006418 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000345 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006673 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000340 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006521 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000344 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006420 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000329 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006409 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000328 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006811 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000333 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006381 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000338 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006953 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000397 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.010242 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000360 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006662 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000341 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006657 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000346 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006630 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000327 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006459 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000339 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006830 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000334 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006462 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000359 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006571 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000332 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006758 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000348 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006571 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000328 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006315 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000408 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006601 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000331 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006761 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000341 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006538 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000334 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006914 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000410 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006695 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000425 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.007117 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000389 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006522 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000373 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006603 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000357 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006565 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000331 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006710 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000382 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006436 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000336 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006921 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000333 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006569 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000349 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006443 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000334 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006509 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000335 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006239 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000332 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006707 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000365 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006523 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000382 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006986 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000350 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006410 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000332 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.011778 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000339 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006689 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000346 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006459 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000328 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006587 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000376 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006659 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000371 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.006875 seconds.
+  path: Assets/Prefabs/Player/Player_controller.cs
+  artifactKey: Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player_controller.cs using Guid(1f86fc8ef92ad894d83be366e0c89e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '00000000000000000000000000000000') in 0.000419 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
+  ERROR: Build asset version error: assets/prefabs/player/player_controller.cs in SourceAssetDB has modification time of '2024-12-05T19:44:58.1195867Z' while content on disk has modification time of '2024-12-05T19:45:00.5901188Z'
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.490 seconds
-Refreshing native plugins compatible for Editor in 4.96 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.505 seconds
+Refreshing native plugins compatible for Editor in 4.84 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.093 seconds
+Domain Reload Profiling: 1594ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (249ms)
+		LoadAssemblies (311ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (29ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1094ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (500ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (78ms)
+			ProcessInitializeOnLoadAttributes (375ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 6.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3468 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3943.
+Memory consumption went from 125.7 MB to 125.7 MB.
+Total: 3.254700 ms (FindLiveObjects: 0.249800 ms CreateObjectMapping: 0.094400 ms MarkObjects: 2.855600 ms  DeleteObjects: 0.054300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.460 seconds
+Refreshing native plugins compatible for Editor in 5.16 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.083 seconds
+Domain Reload Profiling: 1539ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (216ms)
+		LoadAssemblies (290ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1083ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (504ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (394ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 4.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3946.
+Memory consumption went from 126.0 MB to 125.9 MB.
+Total: 3.221600 ms (FindLiveObjects: 0.367600 ms CreateObjectMapping: 0.111200 ms MarkObjects: 2.690400 ms  DeleteObjects: 0.051600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.487 seconds
+Refreshing native plugins compatible for Editor in 4.91 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.030 seconds
+Domain Reload Profiling: 1512ms
+	BeginReloadAssembly (172ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (238ms)
+		LoadAssemblies (304ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (24ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1031ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (453ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (351ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 5.11 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3949.
+Memory consumption went from 126.0 MB to 125.9 MB.
+Total: 3.284600 ms (FindLiveObjects: 0.260200 ms CreateObjectMapping: 0.169100 ms MarkObjects: 2.800400 ms  DeleteObjects: 0.048200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.479 seconds
+Refreshing native plugins compatible for Editor in 4.53 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.126 seconds
+Domain Reload Profiling: 1599ms
+	BeginReloadAssembly (169ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (35ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (227ms)
+		LoadAssemblies (307ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1126ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (520ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (71ms)
+			ProcessInitializeOnLoadAttributes (402ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 5.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3469 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (32.0 KB). Loaded Objects now: 3952.
+Memory consumption went from 126.0 MB to 125.9 MB.
+Total: 3.512000 ms (FindLiveObjects: 0.263900 ms CreateObjectMapping: 0.171100 ms MarkObjects: 3.026400 ms  DeleteObjects: 0.050000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 79.734014 seconds.
+  path: Assets/Prefabs/Player/Player.prefab
+  artifactKey: Guid(fdc3cc4c79db7204ba6c0b0ae4a63f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player/Player.prefab using Guid(fdc3cc4c79db7204ba6c0b0ae4a63f52) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6bf3f02244169ace9ca58ac2d90fe6d7') in 0.100772 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.481 seconds
+Refreshing native plugins compatible for Editor in 5.11 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.076 seconds
+Domain Reload Profiling: 1550ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (32ms)
+	LoadAllAssembliesAndSetupDomain (233ms)
+		LoadAssemblies (294ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (25ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (10ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (1076ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (500ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (85ms)
+			ProcessInitializeOnLoadAttributes (375ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 4.98 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3468 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.2 KB). Loaded Objects now: 3965.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 3.253900 ms (FindLiveObjects: 0.269700 ms CreateObjectMapping: 0.123500 ms MarkObjects: 2.812000 ms  DeleteObjects: 0.047500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.473 seconds
+Refreshing native plugins compatible for Editor in 4.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.149 seconds
+Domain Reload Profiling: 1617ms
+	BeginReloadAssembly (165ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (36ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (228ms)
+		LoadAssemblies (304ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (1149ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (534ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (412ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (13ms)
+Refreshing native plugins compatible for Editor in 6.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3468 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (31.2 KB). Loaded Objects now: 3968.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 3.516500 ms (FindLiveObjects: 0.422700 ms CreateObjectMapping: 0.191600 ms MarkObjects: 2.855000 ms  DeleteObjects: 0.046300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.474 seconds
+Refreshing native plugins compatible for Editor in 4.58 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  1.154 seconds
-Domain Reload Profiling: 1640ms
-	BeginReloadAssembly (178ms)
+Domain Reload Profiling: 1624ms
+	BeginReloadAssembly (162ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (40ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (40ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (35ms)
 	LoadAllAssembliesAndSetupDomain (227ms)
-		LoadAssemblies (315ms)
+		LoadAssemblies (302ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (12ms)
-			TypeCache.Refresh (5ms)
+		AnalyzeDomain (13ms)
+			TypeCache.Refresh (6ms)
 				TypeCache.ScanAssembly (0ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (5ms)
 	FinalizeReload (1155ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (521ms)
+		SetupLoadedEditorAssemblies (546ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (72ms)
-			ProcessInitializeOnLoadAttributes (402ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (13ms)
+			BeforeProcessingInitializeOnLoad (76ms)
+			ProcessInitializeOnLoadAttributes (422ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (14ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 5.72 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 5.17 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3468 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (32.1 KB). Loaded Objects now: 3944.
-Memory consumption went from 125.6 MB to 125.6 MB.
-Total: 3.251800 ms (FindLiveObjects: 0.260000 ms CreateObjectMapping: 0.091700 ms MarkObjects: 2.852700 ms  DeleteObjects: 0.046900 ms)
+Unloading 24 unused Assets / (31.3 KB). Loaded Objects now: 3971.
+Memory consumption went from 130.2 MB to 130.2 MB.
+Total: 3.133200 ms (FindLiveObjects: 0.285600 ms CreateObjectMapping: 0.125100 ms MarkObjects: 2.678500 ms  DeleteObjects: 0.043300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):

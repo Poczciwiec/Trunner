@@ -60,7 +60,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.38f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefabs\Player\Camera_Controller.cs" />
     <Compile Include="Assets\Prefabs\Player\Player_controller.cs" />
     <Compile Include="Assets\UserInput\InputActions.cs" />
   </ItemGroup>

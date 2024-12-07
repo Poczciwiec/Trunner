@@ -55,6 +55,15 @@ namespace Trunner.Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""EnterMenu"",
+                    ""type"": ""Button"",
+                    ""id"": ""77a67556-77d0-4e96-a33f-b09f9eab63ab"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -73,7 +82,7 @@ namespace Trunner.Input
                     ""name"": ""WASD"",
                     ""id"": ""00ca640b-d935-4593-8157-c05846ea39b3"",
                     ""path"": ""Dpad"",
-                    ""interactions"": """",
+                    ""interactions"": ""Hold"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Move"",
@@ -275,6 +284,17 @@ namespace Trunner.Input
                     ""processors"": """",
                     ""groups"": ""XR"",
                     ""action"": ""Fire"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3860203a-59fb-4cb9-a991-e23c6d54f68f"",
+                    ""path"": ""<Keyboard>/escape"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""EnterMenu"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -865,6 +885,7 @@ namespace Trunner.Input
             m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
             m_Player_Look = m_Player.FindAction("Look", throwIfNotFound: true);
             m_Player_Fire = m_Player.FindAction("Fire", throwIfNotFound: true);
+            m_Player_EnterMenu = m_Player.FindAction("EnterMenu", throwIfNotFound: true);
             // UI
             m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
             m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -941,6 +962,7 @@ namespace Trunner.Input
         private readonly InputAction m_Player_Move;
         private readonly InputAction m_Player_Look;
         private readonly InputAction m_Player_Fire;
+        private readonly InputAction m_Player_EnterMenu;
         public struct PlayerActions
         {
             private @InputActions m_Wrapper;
@@ -948,6 +970,7 @@ namespace Trunner.Input
             public InputAction @Move => m_Wrapper.m_Player_Move;
             public InputAction @Look => m_Wrapper.m_Player_Look;
             public InputAction @Fire => m_Wrapper.m_Player_Fire;
+            public InputAction @EnterMenu => m_Wrapper.m_Player_EnterMenu;
             public InputActionMap Get() { return m_Wrapper.m_Player; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -966,6 +989,9 @@ namespace Trunner.Input
                 @Fire.started += instance.OnFire;
                 @Fire.performed += instance.OnFire;
                 @Fire.canceled += instance.OnFire;
+                @EnterMenu.started += instance.OnEnterMenu;
+                @EnterMenu.performed += instance.OnEnterMenu;
+                @EnterMenu.canceled += instance.OnEnterMenu;
             }
 
             private void UnregisterCallbacks(IPlayerActions instance)
@@ -979,6 +1005,9 @@ namespace Trunner.Input
                 @Fire.started -= instance.OnFire;
                 @Fire.performed -= instance.OnFire;
                 @Fire.canceled -= instance.OnFire;
+                @EnterMenu.started -= instance.OnEnterMenu;
+                @EnterMenu.performed -= instance.OnEnterMenu;
+                @EnterMenu.canceled -= instance.OnEnterMenu;
             }
 
             public void RemoveCallbacks(IPlayerActions instance)
@@ -1164,6 +1193,7 @@ namespace Trunner.Input
             void OnMove(InputAction.CallbackContext context);
             void OnLook(InputAction.CallbackContext context);
             void OnFire(InputAction.CallbackContext context);
+            void OnEnterMenu(InputAction.CallbackContext context);
         }
         public interface IUIActions
         {
