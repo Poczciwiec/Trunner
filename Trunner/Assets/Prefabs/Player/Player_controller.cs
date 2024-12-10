@@ -9,22 +9,56 @@ using static Trunner.Input.InputActions;
 public class Player_controller : MonoBehaviour, IPlayerActions
 {
     InputActions controls;
+
+    //#### MOVEMENT ####
+
+    //  #### HORIZONTAL ####
     private const float maxSpeed = 10f;
     private float acceleration = 1.05f;
     private float deceleration = 0.6f;
     [SerializeField] private float moveSpeed = 1f;
-    [SerializeField] private float jumpForce = 5f;
-    Vector2 mouseMove;
     Vector2 playerMove;
     bool isMoving = true;
-    float mouse_sensitivity = 0.1f;
+
+    // #### JUMPING ####
+    [SerializeField] private float jumpForce = 70f;
+    LayerMask jumpRayMask;
+
+    //  #### LOOK ####
+    GameObject player_Camera;
+    float yaw_sensitivity = 0.1f;
+    float pitch_sensitivity = 0.09f;
+    float pitch;
+    Vector2 mouseMove;
 
 
+    private void Awake()
+    {
+        try
+        {
+            player_Camera = transform.Find("Camera").gameObject;
+        } 
+        catch
+        {
+            throw new Exception("Player Camera not found.");
+        }
+    }
     private void Start()
     {
+        // #### LOAD DEFAULT VALUES ####
+        acceleration = 10.5f;
+        deceleration = 0.6f;
+        moveSpeed = 1f;
+        jumpForce = 70f;
+        yaw_sensitivity = 0.1f;
+        pitch_sensitivity = yaw_sensitivity - 0.05f;
+        pitch = 0f;
+
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-        transform.position = new Vector3(0f, 1f, 0f);
+        transform.position = new Vector3(0f, 1f, 0f);           // UNLOCK
+        jumpRayMask = LayerMask.GetMask("Environment");
     }
+
 
     private void Update()
     {
@@ -35,7 +69,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     }
 
 
-    // -------------- InputActions E/D ----------------
+    // @@@@@@@@@@@@@@@ InputActions E/D @@@@@@@@@@@@@@@
     public void OnEnable()
     {
         if (controls == null)
@@ -56,9 +90,9 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     {
         controls.Player.Disable();
     }
+    // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-    // -------------------------------------------------
-
+    // #### ACTIONS ####
     public void OnLook(InputAction.CallbackContext context)
     {
         //float w = mouseMove.magnitude * mouse_sensitivity;
@@ -72,10 +106,12 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         //Debug.Log($"Point: {point}");
         //rotation *= point * inversed;
 
-        float pitch = mouseMove.y * mouse_sensitivity;
-        float yaw = mouseMove.x * mouse_sensitivity;
-
-        transform.Find("Camera").rotation *= Quaternion.AngleAxis(pitch, Vector3.left);
+        pitch -= (mouseMove.y * pitch_sensitivity);
+        float yaw = mouseMove.x * yaw_sensitivity;
+        pitch = Math.Clamp(pitch, -80, 80);
+        
+        player_Camera.transform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
+        
         transform.rotation *= Quaternion.AngleAxis(yaw, Vector3.up);
 
         //Vector2 lookInput = context.ReadValue<Vector2>();
@@ -85,14 +121,23 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     public void OnMove(InputAction.CallbackContext context)
     {
         //Debug.Log("Moved");
-        
-
-        
     }
 
     public void OnFire(InputAction.CallbackContext context)
     {
+        // !!!! TEMPORARY !!!!
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, jumpRayMask);
+
+        if (hit.collider != null && hit.collider.gameObject.CompareTag("floor"))
+        {
+            Vector3 jump = new Vector3(0, jumpForce, 0);
+            this.GetComponent<Rigidbody>().AddForce(jump);
+        }
     }
 
     public void OnEnterMenu(InputAction.CallbackContext context)
@@ -100,6 +145,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         UnityEngine.Cursor.lockState = CursorLockMode.None;
     }
 
+    // #### METHODS ####
     void Movement()
     {
         Vector3 moveVector = new Vector3(playerMove.x, 0f, playerMove.y);                   // UIS automatycznie normalizuje ten wektor
@@ -107,11 +153,6 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         this.transform.Translate(moveVector * Time.deltaTime);
     }
 
-    void Jump()
-    {
-        Vector3 jump = new Vector3(0, jumpForce, 0);
-        this.transform.Translate(jump * Time.deltaTime);
-    }
 
     float DetermineSpeed()
     {
