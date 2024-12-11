@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 88
+  controlID: 94
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 41
+  controlID: 234
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -932,7 +932,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs/Player
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -940,16 +940,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\janek\Desktop\Trunner\Trunner
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 065d0000
-    m_LastClickedID: 23814
-    m_ExpandedIDs: 00000000065d00004c5d000000ca9a3b
+    m_SelectedIDs: 545d0000
+    m_LastClickedID: 23892
+    m_ExpandedIDs: 00000000065d00004a5d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1002,10 +1002,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 965c0000
-    m_LastClickedInstanceID: 23702
+    m_SelectedInstanceIDs: 9a610000
+    m_LastClickedInstanceID: 24986
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000aca00000
+    m_ExpandedInstanceIDs: c6230000aca0000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1117,23 +1117,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1efbffff
-      m_LastClickedID: -1250
+      m_SelectedIDs: 965c0000
+      m_LastClickedID: 23702
       m_ExpandedIDs: 2cfbffff965c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Player
+        m_OriginalName: Player
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 23702
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -1441,7 +1441,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 48, y: 10}
+      snapOffset: {x: 48, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: UnityEditor.SceneViewCameraOverlay
@@ -1525,9 +1525,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 1, z: 0}
+    m_Target: {x: 0.5679862, y: 1.0877432, z: 0.034662962}
     speed: 2
-    m_Value: {x: 0, y: 1, z: 0}
+    m_Value: {x: 0.5679862, y: 1.0877432, z: 0.034662962}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1573,9 +1573,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.06742266, y: -0.86867404, z: 0.12330163, w: 0.47500956}
+    m_Target: {x: -0.0039044234, y: -0.9945206, z: 0.040299427, w: -0.09637187}
     speed: 2
-    m_Value: {x: 0.06742341, y: -0.8686837, z: 0.123303, w: 0.47501487}
+    m_Value: {x: -0.0039044272, y: -0.99452156, z: 0.040299464, w: -0.096371956}
   m_Size:
     m_Target: 1.2247449
     speed: 2

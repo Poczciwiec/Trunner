@@ -21,8 +21,9 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     bool isMoving = true;
 
     // #### JUMPING ####
-    [SerializeField] private float jumpForce = 70f;
+    [SerializeField] private float jumpForce = 300f;
     LayerMask jumpRayMask;
+    Collider ground_Detection;
 
     //  #### LOOK ####
     GameObject player_Camera;
@@ -40,7 +41,15 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         } 
         catch
         {
-            throw new Exception("Player Camera not found.");
+            throw new Exception("Player>Camera not found.");
+        }
+        try
+        {
+            ground_Detection = transform.GetComponent<BoxCollider>();
+        }
+        catch
+        {
+            throw new Exception("Ground detection box collider not found.");
         }
     }
     private void Start()
@@ -49,7 +58,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         acceleration = 10.5f;
         deceleration = 0.6f;
         moveSpeed = 1f;
-        jumpForce = 70f;
+        jumpForce = 300f;
         yaw_sensitivity = 0.1f;
         pitch_sensitivity = yaw_sensitivity - 0.05f;
         pitch = 0f;
@@ -133,7 +142,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     {
         Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, jumpRayMask);
 
-        if (hit.collider != null && hit.collider.gameObject.CompareTag("floor"))
+        if (hit.collider != null)
         {
             Vector3 jump = new Vector3(0, jumpForce, 0);
             this.GetComponent<Rigidbody>().AddForce(jump);
@@ -154,7 +163,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     }
 
 
-    float DetermineSpeed()
+    float DetermineSpeed()  // TO DO
     {
         if (!isMoving && moveSpeed <= 0.1f) moveSpeed = 0.1f;
         else if (isMoving && moveSpeed < maxSpeed) moveSpeed *= acceleration;
