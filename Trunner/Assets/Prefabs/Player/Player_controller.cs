@@ -24,6 +24,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     [SerializeField] private float jumpForce = 300f;
     LayerMask jumpRayMask;
     Collider ground_Detection;
+    bool isFalling;
 
     //  #### LOOK ####
     GameObject player_Camera;
@@ -72,8 +73,11 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     private void Update()
     {
         mouseMove = controls.Player.Look.ReadValue<Vector2>();
+    }
+
+    private void FixedUpdate()
+    {
         playerMove = controls.Player.Move.ReadValue<Vector2>();
-        
         Movement();
     }
 
@@ -140,13 +144,22 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, jumpRayMask);
+        //Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, jumpRayMask);
 
-        if (hit.collider != null)
+        if (!isFalling)
         {
             Vector3 jump = new Vector3(0, jumpForce, 0);
             this.GetComponent<Rigidbody>().AddForce(jump);
         }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        isFalling = false;
+    }
+    void OnTriggerExit(Collider other)
+    {
+        isFalling = true;
     }
 
     public void OnEnterMenu(InputAction.CallbackContext context)
