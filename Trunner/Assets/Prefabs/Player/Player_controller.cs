@@ -12,7 +12,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
     //#### MOVEMENT ####
 
-    //  #### HORIZONTAL ####
+    //   HORIZONTAL 
     private const float maxSpeed = 10f;
     private float acceleration = 1.05f;
     private float deceleration = 0.6f;
@@ -20,18 +20,24 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     Vector2 playerMove;
     bool isMoving = true;
 
-    // #### JUMPING ####
+    //   JUMPING 
     [SerializeField] private float jumpForce = 300f;
     LayerMask jumpRayMask;
     Collider ground_Detection;
-    bool isFalling;
-
-    //  #### LOOK ####
+    float lastY;
+    bool triggerCollision;
+    
+    //   LOOK 
     GameObject player_Camera;
     float yaw_sensitivity = 0.1f;
     float pitch_sensitivity = 0.09f;
     float pitch;
     Vector2 mouseMove;
+
+
+    //#### GAMEPLAY ####
+    int health = 100;
+    bool blockMovement = false;
 
 
     private void Awake()
@@ -63,6 +69,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         yaw_sensitivity = 0.1f;
         pitch_sensitivity = yaw_sensitivity - 0.05f;
         pitch = 0f;
+        
 
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         transform.position = new Vector3(0f, 1f, 0f);           // UNLOCK
@@ -79,6 +86,8 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     {
         playerMove = controls.Player.Move.ReadValue<Vector2>();
         Movement();
+
+        if (health <= 0) Death();
     }
 
 
@@ -146,7 +155,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     {
         //Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit, 1.1f, jumpRayMask);
 
-        if (!isFalling)
+        if (!triggerCollision)
         {
             Vector3 jump = new Vector3(0, jumpForce, 0);
             this.GetComponent<Rigidbody>().AddForce(jump);
@@ -155,11 +164,11 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
     void OnTriggerStay(Collider other)
     {
-        isFalling = false;
+        triggerCollision = false;
     }
     void OnTriggerExit(Collider other)
     {
-        isFalling = true;
+        triggerCollision = true;
     }
 
     public void OnEnterMenu(InputAction.CallbackContext context)
@@ -172,7 +181,42 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     {
         Vector3 moveVector = new Vector3(playerMove.x, 0f, playerMove.y);                   // UIS automatycznie normalizuje ten wektor
         moveVector *= maxSpeed;
+
+        if (blockMovement)
+        {
+            moveVector = Vector3.zero;
+        }
         this.transform.Translate(moveVector * Time.deltaTime);
+    }
+
+    bool IsFalling()            // To execute every frame
+    {
+        float currentY = transform.position.y;
+        if(currentY != lastY)
+        {
+            if(currentY < lastY)
+            {
+                // Player going down
+                return true;
+            }
+            else
+            {
+                // Player going up
+                return false;
+            }
+        } else
+        {
+            return false;
+        }
+
+        lastY = currentY;
+    }
+
+    void Death()
+    {
+        blockMovement = true;
+        
+        // Death animation invoke here;
     }
 
 
