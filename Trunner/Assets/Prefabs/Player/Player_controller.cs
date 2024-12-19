@@ -36,7 +36,6 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
 
     //#### GAMEPLAY ####
-    int health = 100;
     bool blockMovement = false;
 
 
@@ -86,8 +85,6 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     {
         playerMove = controls.Player.Move.ReadValue<Vector2>();
         Movement();
-
-        if (health <= 0) Death();
     }
 
 
