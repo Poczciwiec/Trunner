@@ -10,6 +10,7 @@ public class Enemy_script : MonoBehaviour
 
     NavMeshAgent agent;
     GameObject player;
+    Animator anim;
     Vector3 target;
 
     //  GAMEPLAY
@@ -25,7 +26,7 @@ public class Enemy_script : MonoBehaviour
         catch
         {
             throw new Exception("Missing NavMeshAgent component!");
-        }
+        }   // NavMeshAgent Component
         try
         {
             player = GameObject.Find("Player");
@@ -33,7 +34,15 @@ public class Enemy_script : MonoBehaviour
         catch
         {
             throw new Exception("Player not found!");
+        }   // Player GameObject
+        try
+        {
+            anim = transform.GetChild(0).GetComponent<Animator>();
         }
+        catch
+        {
+            throw new Exception("Missing Animator component!");
+        }   // Animator Component
     }
 
     private void Start()
@@ -48,8 +57,14 @@ public class Enemy_script : MonoBehaviour
     {
         target = player.transform.position;
         if(Vector3.Distance(target, transform.position) > agent.stoppingDistance) agent.destination = target;
+        Debug.Log(anim.GetBool("isWalking"));
     }
 
+    private void FixedUpdate()
+    {
+        if (agent.velocity.magnitude > 0f) anim.SetBool("isWalking", true);
+        else anim.SetBool("isWalking", false);
+    }
 
 
     // #### METHODS ####

@@ -194,19 +194,22 @@ public class Player_controller : MonoBehaviour, IPlayerActions
             if(currentY < lastY)
             {
                 // Player going down
+                lastY = currentY;
                 return true;
             }
             else
             {
                 // Player going up
+                lastY = currentY;
                 return false;
             }
         } else
         {
+            lastY = currentY;
             return false;
         }
 
-        lastY = currentY;
+        
     }
 
     void Death()
