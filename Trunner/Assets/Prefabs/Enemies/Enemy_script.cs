@@ -50,20 +50,28 @@ public class Enemy_script : MonoBehaviour
         // #### NAVIGATION SETTINGS ####
 
         agent.stoppingDistance = attack_range;
-
+        
     }
 
     void Update()
     {
         target = player.transform.position;
         if(Vector3.Distance(target, transform.position) > agent.stoppingDistance) agent.destination = target;
-        Debug.Log(anim.GetBool("isWalking"));
+        
     }
 
     private void FixedUpdate()
     {
-        if (agent.velocity.magnitude > 0f) anim.SetBool("isWalking", true);
-        else anim.SetBool("isWalking", false);
+        if (agent.velocity.magnitude > 0f)
+        {
+            anim.SetBool("isWalking", true);
+            anim.speed = agent.velocity.magnitude / 1.4f;
+        }
+        else
+        {
+            anim.SetBool("isWalking", false);
+            anim.speed = 1f;
+        }
     }
 
 
