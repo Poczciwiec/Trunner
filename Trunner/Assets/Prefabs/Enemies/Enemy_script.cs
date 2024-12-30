@@ -12,6 +12,7 @@ public class Enemy_script : MonoBehaviour
     GameObject player;
     Animator anim;
     Vector3 target;
+    GameObject weapon;
 
     //  GAMEPLAY
 
@@ -50,14 +51,20 @@ public class Enemy_script : MonoBehaviour
         // #### NAVIGATION SETTINGS ####
 
         agent.stoppingDistance = attack_range;
-        
+
+        // #### OTHER ####
+
+        //weapon = transform.GetChild(0).GetChild(0).GetChild(4).GetChild(0).GetChild(0).GetChild(2).GetChild(0).GetChild(0).gameObject;
     }
 
     void Update()
     {
         target = player.transform.position;
-        if(Vector3.Distance(target, transform.position) > agent.stoppingDistance) agent.destination = target;
-        
+        if (Vector3.Distance(target, transform.position) > agent.stoppingDistance)
+        {
+            agent.destination = target;
+            Attack();
+        }
     }
 
     private void FixedUpdate()
@@ -80,8 +87,13 @@ public class Enemy_script : MonoBehaviour
     void Attack()
     {
         // attack animation invoke here;
-        
 
-        
+
+        _ = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, attack_range);
+
+        if(hit.collider != null)
+        {
+            hit.collider.SendMessage("Death");          // Works, I just need to figure out the animation part, so that it is dodgeable
+        }
     }
 }
