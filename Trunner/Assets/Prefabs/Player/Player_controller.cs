@@ -183,7 +183,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         {
             moveVector = Vector3.zero;
         }
-        this.transform.Translate(moveVector * Time.deltaTime);
+        transform.Translate(moveVector * Time.deltaTime);
     }
 
     bool IsFalling()            // To execute every frame

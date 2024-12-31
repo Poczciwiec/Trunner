@@ -12,11 +12,12 @@ public class Enemy_script : MonoBehaviour
     GameObject player;
     Animator anim;
     Vector3 target;
-    GameObject weapon;
 
     //  GAMEPLAY
 
     float attack_range = 3f;
+    float attack_cooldown = 2f;
+    bool can_attack;
 
     void Awake()
     {
@@ -54,7 +55,7 @@ public class Enemy_script : MonoBehaviour
 
         // #### OTHER ####
 
-        //weapon = transform.GetChild(0).GetChild(0).GetChild(4).GetChild(0).GetChild(0).GetChild(2).GetChild(0).GetChild(0).gameObject;
+        StartCoroutine(AttackCooldown());
     }
 
     void Update()
@@ -63,12 +64,18 @@ public class Enemy_script : MonoBehaviour
         if (Vector3.Distance(target, transform.position) > agent.stoppingDistance)
         {
             agent.destination = target;
-            Attack();
+            if (anim.GetBool("isWalking") == false && can_attack)
+            {
+                // Need to apply rotation here, so that it is in the appropriate direction
+                anim.Play("InitiateAttack");
+            }
         }
+        
     }
 
     private void FixedUpdate()
     {
+
         if (agent.velocity.magnitude > 0f)
         {
             anim.SetBool("isWalking", true);
@@ -86,14 +93,23 @@ public class Enemy_script : MonoBehaviour
 
     void Attack()
     {
-        // attack animation invoke here;
-
 
         _ = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, attack_range);
 
         if(hit.collider != null)
         {
-            hit.collider.SendMessage("Death");          // Works, I just need to figure out the animation part, so that it is dodgeable
+            hit.collider.SendMessage("Death");          
         }
+    }
+
+    void StartCooldown()
+    {
+        StartCoroutine(AttackCooldown());
+    }
+    IEnumerator AttackCooldown()
+    {
+        can_attack = false;
+        yield return new WaitForSeconds(attack_cooldown);
+        can_attack = true;
     }
 }
