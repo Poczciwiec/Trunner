@@ -20,11 +20,11 @@ public class animEventHandler : MonoBehaviour
 
     void Attack()
     {
-        Walker.SendMessage("Attack", SendMessageOptions.DontRequireReceiver);
+        Walker.SendMessage("ApplyDamage");
     }
 
     void AttackCompleted()
     {
-        Walker.SendMessage("StartCooldown", SendMessageOptions.DontRequireReceiver);
+        Walker.SendMessage("StartCooldown");
     }
 }

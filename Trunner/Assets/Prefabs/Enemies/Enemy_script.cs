@@ -11,13 +11,16 @@ public class Enemy_script : MonoBehaviour
     NavMeshAgent agent;
     GameObject player;
     Animator anim;
-    Vector3 target;
+    Vector3 target;             // used for navigation
+    Vector3 lookTarget;         // used for rotation
 
     //  GAMEPLAY
 
     float attack_range = 3f;
     float attack_cooldown = 2f;
-    bool can_attack;
+    float attack_rotation_speed = 12f;
+    bool off_cooldown;
+    bool is_attacking;
 
     void Awake()
     {
@@ -51,7 +54,7 @@ public class Enemy_script : MonoBehaviour
     {
         // #### NAVIGATION SETTINGS ####
 
-        agent.stoppingDistance = attack_range;
+        agent.stoppingDistance = attack_range - 0.5f;
 
         // #### OTHER ####
 
@@ -64,12 +67,16 @@ public class Enemy_script : MonoBehaviour
         if (Vector3.Distance(target, transform.position) > agent.stoppingDistance)
         {
             agent.destination = target;
-            if (anim.GetBool("isWalking") == false && can_attack)
-            {
-                // Need to apply rotation here, so that it is in the appropriate direction
-                anim.Play("InitiateAttack");
-            }
+
+            if (is_attacking) agent.isStopped = true;
+            else agent.isStopped = false;
         }
+        else
+        {
+            agent.isStopped = true;
+        }
+
+        if (InRange()) Attack();
         
     }
 
@@ -91,25 +98,49 @@ public class Enemy_script : MonoBehaviour
 
     // #### METHODS ####
 
+    bool InRange()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) <= attack_range)
+        {
+            return true;
+        }
+        else return false;
+    }
+
     void Attack()
+    {
+        if (off_cooldown && !is_attacking)
+        {
+            anim.Play("InitiateAttack");
+            is_attacking = true;
+        }
+        lookTarget = transform.position - player.transform.position;
+        Quaternion targetRotation = Quaternion.LookRotation(lookTarget);
+
+        // V Works not V
+        transform.GetChild(0).transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, attack_rotation_speed * Time.deltaTime);
+    }
+
+    void ApplyDamage()
     {
 
         _ = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, attack_range);
 
         if(hit.collider != null)
         {
-            hit.collider.SendMessage("Death");          
+            hit.collider.SendMessage("Death", SendMessageOptions.DontRequireReceiver);          
         }
     }
 
     void StartCooldown()
     {
         StartCoroutine(AttackCooldown());
+        is_attacking = false;
     }
     IEnumerator AttackCooldown()
     {
-        can_attack = false;
+        off_cooldown = false;
         yield return new WaitForSeconds(attack_cooldown);
-        can_attack = true;
+        off_cooldown = true;
     }
 }
