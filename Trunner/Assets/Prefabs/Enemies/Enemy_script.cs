@@ -66,6 +66,7 @@ public class Enemy_script : MonoBehaviour
         target = player.transform.position;
         if (Vector3.Distance(target, transform.position) > agent.stoppingDistance)
         {
+            agent.updateRotation = true;
             agent.destination = target;
 
             if (is_attacking) agent.isStopped = true;
@@ -109,16 +110,18 @@ public class Enemy_script : MonoBehaviour
 
     void Attack()
     {
+        agent.updateRotation = false;
         if (off_cooldown && !is_attacking)
         {
             anim.Play("InitiateAttack");
             is_attacking = true;
         }
-        lookTarget = transform.position - player.transform.position;
-        Quaternion targetRotation = Quaternion.LookRotation(lookTarget);
 
-        // V Works not V
-        transform.GetChild(0).transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, attack_rotation_speed * Time.deltaTime);
+        Vector3 playerXZ = new Vector3(player.transform.position.x, 0f, player.transform.position.z);
+        lookTarget = -(transform.position - playerXZ);
+        Quaternion targetRotation = Quaternion.LookRotation(lookTarget, Vector3.up);
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, attack_rotation_speed * Time.deltaTime);
+
     }
 
     void ApplyDamage()
