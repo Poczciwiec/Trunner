@@ -359,6 +359,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.38f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Prefabs/Enemies/animEventHandler.cs"
+"Assets/Prefabs/Enemies/enemyColliderReceiver.cs"
 "Assets/Prefabs/Enemies/Enemy_script.cs"
 "Assets/Prefabs/Player/Player_controller.cs"
 "Assets/UserInput/InputActions.cs"

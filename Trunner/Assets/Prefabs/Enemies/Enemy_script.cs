@@ -146,4 +146,11 @@ public class Enemy_script : MonoBehaviour
         yield return new WaitForSeconds(attack_cooldown);
         off_cooldown = true;
     }
+
+    void OnDamaged()
+    {
+        // Unity's particle system???
+
+        Destroy(this.gameObject);
+    }
 }

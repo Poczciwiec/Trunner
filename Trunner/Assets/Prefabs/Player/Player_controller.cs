@@ -14,11 +14,11 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
     //   HORIZONTAL 
     private const float maxSpeed = 10f;
-    private float acceleration = 1.05f;
-    private float deceleration = 0.6f;
-    [SerializeField] private float moveSpeed = 1f;
     Vector2 playerMove;
-    bool isMoving = true;
+    //private float acceleration = 1.05f;
+    //private float deceleration = 0.6f;
+    //[SerializeField] private float moveSpeed = 1f;
+    //bool isMoving = true;
 
     //   JUMPING 
     [SerializeField] private float jumpForce = 300f;
@@ -37,6 +37,11 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
     //#### GAMEPLAY ####
     bool blockMovement = false;
+
+    //   PRIMARY ATTACK
+    bool off_primary_cooldown;
+    float primary_range = 2f;
+    float primary_cooldown = 2f;
 
 
     private void Awake()
@@ -61,10 +66,6 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     private void Start()
     {
         // #### LOAD DEFAULT VALUES ####
-        acceleration = 10.5f;
-        deceleration = 0.6f;
-        moveSpeed = 1f;
-        jumpForce = 300f;
         yaw_sensitivity = 0.1f;
         pitch_sensitivity = yaw_sensitivity - 0.05f;
         pitch = 0f;
@@ -145,7 +146,22 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     public void OnFire(InputAction.CallbackContext context)
     {
         // !!!! TEMPORARY !!!!
-        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        if(Cursor.lockState == CursorLockMode.None)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
+        else if (off_primary_cooldown)
+        {
+            _ = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, primary_range);
+
+            if(hit.collider != null)
+            {
+                if (hit.collider.tag == "Enemy") hit.collider.SendMessage("OnDamaged");
+            }
+
+        }
+        StartCoroutine(AttackCooldown());
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -185,7 +201,24 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         }
         transform.Translate(moveVector * Time.deltaTime);
     }
+    IEnumerator AttackCooldown()
+    {
+        off_primary_cooldown = false;
+        yield return new WaitForSeconds(primary_cooldown);
+        off_primary_cooldown = true;
+    }
+    void Death()
+    {
+        blockMovement = true;
+        
+        // Death animation invoke here;
+    }
 
+
+
+    // #@#@ THE VOID #@#@   (unused methods)
+
+    /*
     bool IsFalling()            // To execute every frame
     {
         float currentY = transform.position.y;
@@ -212,14 +245,6 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         
     }
 
-    void Death()
-    {
-        blockMovement = true;
-        
-        // Death animation invoke here;
-    }
-
-
     float DetermineSpeed()  // TO DO
     {
         if (!isMoving && moveSpeed <= 0.1f) moveSpeed = 0.1f;
@@ -229,4 +254,5 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
         return moveSpeed;
     }
+    */
 }
