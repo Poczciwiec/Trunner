@@ -9,6 +9,7 @@ using static Trunner.Input.InputActions;
 public class Player_controller : MonoBehaviour, IPlayerActions
 {
     InputActions controls;
+    Animator anim;
 
     //#### MOVEMENT ####
 
@@ -61,6 +62,14 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         catch
         {
             throw new Exception("Ground detection box collider not found.");
+        }
+        try
+        {
+            anim = player_Camera.GetComponentInChildren<Animator>();
+        }
+        catch
+        {
+            throw new Exception("Animator Component not found!");
         }
     }
     private void Start()
@@ -153,13 +162,7 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
         else if (off_primary_cooldown)
         {
-            _ = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, primary_range);
-
-            if(hit.collider != null)
-            {
-                if (hit.collider.tag == "Enemy") hit.collider.SendMessage("OnDamaged");
-            }
-
+            anim.Play("InitiateAttack");
         }
         StartCoroutine(AttackCooldown());
     }
@@ -200,6 +203,16 @@ public class Player_controller : MonoBehaviour, IPlayerActions
             moveVector = Vector3.zero;
         }
         transform.Translate(moveVector * Time.deltaTime);
+    }
+
+    void ApplyDamage()
+    {
+        _ = Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, primary_range);
+
+        if (hit.collider != null)
+        {
+            if (hit.collider.tag == "Enemy") hit.collider.SendMessage("OnDamaged");
+        }
     }
     IEnumerator AttackCooldown()
     {

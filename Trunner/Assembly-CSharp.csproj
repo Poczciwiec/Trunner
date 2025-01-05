@@ -61,7 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\Enemies\enemyColliderReceiver.cs" />
-    <Compile Include="Assets\Prefabs\Enemies\animEventHandler.cs" />
+    <Compile Include="Assets\Animation\animEventHandler.cs" />
     <Compile Include="Assets\Prefabs\Enemies\Enemy_script.cs" />
     <Compile Include="Assets\Prefabs\Player\Player_controller.cs" />
     <Compile Include="Assets\UserInput\InputActions.cs" />
