@@ -1128,13 +1128,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5759488236688015510, guid: fdc3cc4c79db7204ba6c0b0ae4a63f52, type: 3}
-      propertyPath: field of view
-      value: 34
+    - target: {fileID: 3455884689868530315, guid: fdc3cc4c79db7204ba6c0b0ae4a63f52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -89.98021
       objectReference: {fileID: 0}
     - target: {fileID: 6810876226139496251, guid: fdc3cc4c79db7204ba6c0b0ae4a63f52, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6810876226139496251, guid: fdc3cc4c79db7204ba6c0b0ae4a63f52, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8171908627362563483, guid: fdc3cc4c79db7204ba6c0b0ae4a63f52, type: 3}
       propertyPath: m_LocalPosition.x
