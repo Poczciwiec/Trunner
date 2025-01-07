@@ -40,12 +40,15 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
 
     //#### GAMEPLAY ####
-    bool blockMovement = false;
+    bool blockMovement;
 
     //   PRIMARY ATTACK
     bool off_primary_cooldown;
     float primary_range = 2f;
     float primary_cooldown = 2f;
+
+    //   BIRTH
+    Vector3 defaultSpawnPoint = Vector3.up;
 
 
     private void Awake()
@@ -93,8 +96,9 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         
 
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-        transform.position = new Vector3(0f, 1f, 0f);           // UNLOCK
-        bScreen.CrossFadeColor(Color.clear, 1.5f, false, true);
+        bScreen.gameObject.SetActive(true);
+
+        BeBorn(defaultSpawnPoint);
 
         //jumpRayMask = LayerMask.GetMask("Environment");
     }
@@ -177,8 +181,13 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         else if (off_primary_cooldown)
         {
             anim.Play("InitiateAttack");
+            StartCoroutine(AttackCooldown());
         }
-        StartCoroutine(AttackCooldown());
+
+        else if(blockMovement == true)
+        {
+            BeBorn(defaultSpawnPoint);
+        }
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -237,13 +246,18 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     void Death()
     {
         blockMovement = true;
+        off_primary_cooldown = false;
         anim.Play("Death");
         bScreen.CrossFadeColor(Color.black, 0.4f, false, true);
-        
-        // Death animation invoke here;
     }
 
-
+    void BeBorn(Vector3 birthPlace)
+    {
+        transform.position = birthPlace;
+        bScreen.CrossFadeColor(Color.clear, 1.5f, false, true);
+        blockMovement = false;
+        StartCoroutine(AttackCooldown());
+    }
 
     // #@#@ THE VOID #@#@   (unused methods)
 
