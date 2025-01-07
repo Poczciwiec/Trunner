@@ -6,10 +6,13 @@ using Trunner.Input;
 using System;
 using static Trunner.Input.InputActions;
 
+
 public class Player_controller : MonoBehaviour, IPlayerActions
 {
     InputActions controls;
     Animator anim;
+    Canvas canv;
+    UnityEngine.UI.Image bScreen;
 
     //#### MOVEMENT ####
 
@@ -71,6 +74,15 @@ public class Player_controller : MonoBehaviour, IPlayerActions
         {
             throw new Exception("Animator Component not found!");
         }
+        try
+        {
+            canv = FindFirstObjectByType<Canvas>();
+            bScreen = canv.transform.Find("BlackScreen").GetComponent<UnityEngine.UI.Image>();
+        }
+        catch
+        {
+            throw new Exception("Canvas is missing!");
+        }
     }
     private void Start()
     {
@@ -82,7 +94,9 @@ public class Player_controller : MonoBehaviour, IPlayerActions
 
         UnityEngine.Cursor.lockState = CursorLockMode.Locked;
         transform.position = new Vector3(0f, 1f, 0f);           // UNLOCK
-        jumpRayMask = LayerMask.GetMask("Environment");
+        bScreen.CrossFadeColor(Color.clear, 1.5f, false, true);
+
+        //jumpRayMask = LayerMask.GetMask("Environment");
     }
 
 
@@ -223,6 +237,8 @@ public class Player_controller : MonoBehaviour, IPlayerActions
     void Death()
     {
         blockMovement = true;
+        anim.Play("Death");
+        bScreen.CrossFadeColor(Color.black, 0.4f, false, true);
         
         // Death animation invoke here;
     }
